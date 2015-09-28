@@ -155,12 +155,12 @@
           <operation Id="851b3318-7a94-44a9-a211-08c0b43cfaba" name="pickupWeapon" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="44222333-915b-415b-99d7-589e635e4472" />
           </operation>
-          <operation Id="e8af5fe5-e651-4f1e-85ef-e29c3628bc35" name="Player" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="e8af5fe5-e651-4f1e-85ef-e29c3628bc35" name="player" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="dc4f73b8-1cd0-4d94-a3fd-d3569ea95bb1" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="e37cc2ba-0d42-4164-828b-feb73bf1684d" name="Room" direction="In" isUnique="false">
-                  <elementDefinition Id="adad53eb-0843-4d8b-8ddc-06b6f8cce274" />
+                <parameter Id="6be7683d-c4e0-4cc8-b173-76bd8d1d27a6" name="Room" direction="In" isUnique="false">
+                  <elementDefinition Id="bb8a5ce3-3ffc-4180-adbd-c504ed88b8de" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>

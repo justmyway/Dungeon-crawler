@@ -422,7 +422,7 @@
             isQuery="false" />
           <operation
             Id="dc4f73b8-1cd0-4d94-a3fd-d3569ea95bb1"
-            name="Player"
+            name="player"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -431,7 +431,7 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="adad53eb-0843-4d8b-8ddc-06b6f8cce274"
+                  Id="bb8a5ce3-3ffc-4180-adbd-c504ed88b8de"
                   name="Room"
                   direction="In"
                   isUnique="false" />
