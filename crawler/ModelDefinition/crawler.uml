@@ -143,6 +143,58 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="67f36798-bb27-4dbd-9374-10cf589d77fa"
+            isDerived="false"
+            sourceEndRoleName="Player"
+            targetEndRoleName="Item"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c01fd5d7-b393-40f8-bf4f-ffe766a0c7dc"
+              LastKnownName="Item"
+              LastKnownLocation="crawler.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="49220b67-73d9-4e6a-96da-ec14c20232ce"
+                  name="Player"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="babd59ea-a143-45a8-92c6-c7679f8f69c1"
+                  name="Item"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6f927d2b-7889-4918-98f3-6bd13bfdc10b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5ba0eb0a-8fcb-43be-83bd-e80d544fcab6"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -296,6 +348,44 @@
                 LastKnownLocation="crawler.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="9fd7bdad-efcb-4eb9-9ec2-fcef59d9ef9c"
+            name="items"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="35040ff2-c561-44a1-bd48-bece0513674b"
+                LastKnownName="Item"
+                LastKnownLocation="crawler.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8a5db43f-5ebc-4fe7-95b6-bc3153f6f62b"
+            name="strength"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="crawler.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -378,6 +468,25 @@
                 LastKnownLocation="crawler.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="d26d16ec-fd13-45ea-aec7-be89b34bb0c7"
+            name="strength"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="crawler.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -388,10 +497,113 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="fbf13994-8eda-4eee-b6da-5de7b3e53d1b"
+            isDerived="false"
+            sourceEndRoleName="Map"
+            targetEndRoleName="MapRoom"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="efe5168e-bad2-4b3c-93f1-12322c6d8923"
+              LastKnownName="MapRoom"
+              LastKnownLocation="crawler.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e2af9d12-d236-470e-9e39-e56d7a91ae24"
+                  name="Map"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="653d7e9f-7ed5-4f61-97a0-924a9886c17a"
+                  name="MapRoom"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7e86958a-4959-4fe0-b7bf-9be8f6d4698a"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="010453fc-1655-42ba-a438-b19e888c84a1"
+                      name="Upper"
+                      value="10" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="182d288f-8a3a-4bbb-9313-34a0f2701eea"
+            name="beginRooms"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a4a1ba4f-8b33-4669-8ed0-c31fe7cf8849"
+                LastKnownName="MapRoom"
+                LastKnownLocation="crawler.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="100e282d-f0b8-4998-aa50-b189fbfdff02"
+            name="Floorplan"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="efe5168e-bad2-4b3c-93f1-12322c6d8923"
+                LastKnownName="MapRoom"
+                LastKnownLocation="crawler.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="63c7d437-fdc8-4b0c-a0da-b02397b47f46"
-            name="Draw"
+            name="draw"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9c1397f3-b5f0-4826-925d-8d84324b7f48"
+            name="map"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -472,6 +684,162 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="478baca4-80dc-48b4-9248-52893cb4d280"
+            isDerived="false"
+            sourceEndRoleName="Room"
+            targetEndRoleName="Item"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c01fd5d7-b393-40f8-bf4f-ffe766a0c7dc"
+              LastKnownName="Item"
+              LastKnownLocation="crawler.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5f30573c-ea2d-4498-baf1-2aff3cfc53a4"
+                  name="Room"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="70a57291-08f3-4205-a72e-62c2764475ec"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="775415e8-faf8-49d7-afce-65721f1dcfed"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="23b0c037-d88e-4ed0-bcbd-310faf1d71b0"
+                  name="Item"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="dd2f7722-0f2f-4a93-90df-8312c93d04dd"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9712afb2-aa94-454f-8742-a38d1d8fb33b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="61b79251-ee2c-44a0-9d5b-d33ffe06608e"
+            isDerived="false"
+            sourceEndRoleName="Room"
+            targetEndRoleName="Enemy"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6e978463-4a2c-4509-bd57-abdf781346d8"
+              LastKnownName="Enemy"
+              LastKnownLocation="crawler.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fd76d00f-327a-4188-af57-c2904bedb59d"
+                  name="Room"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f30d5132-cbf7-42ff-94ec-bad378fac152"
+                  name="Enemy"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f3173393-9d85-4058-b2a5-663a0b10eb49"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3f547f92-ce07-47b4-8aa6-325baa1dcdc0"
+                      name="Upper"
+                      value="5" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="366cefca-f122-4fc9-b11d-2f5c71c14364"
+            isDerived="false"
+            sourceEndRoleName="Room"
+            targetEndRoleName="RoomSpecification"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c7633400-fb82-4b03-878b-2c8b3e7e2026"
+              LastKnownName="RoomSpecification"
+              LastKnownLocation="crawler.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="05916308-8e2c-48dc-83c3-2eb9c9ded019"
+                  name="Room"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="24a6b38c-7133-4a68-993e-150079b50be7"
+                  name="RoomSpecification"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -512,7 +880,89 @@
                 LastKnownLocation="crawler.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="f3503278-00da-4107-8432-5a5c898c915f"
+            name="items"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="c01fd5d7-b393-40f8-bf4f-ffe766a0c7dc"
+                LastKnownName="Item"
+                LastKnownLocation="crawler.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9231212f-c3a8-4ac0-9c35-9df7d640e0d2"
+            name="enemies"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="0bdebf01-3c20-4f3e-bbf8-4c53a8ce073c"
+                LastKnownName="LinkedList"
+                LastKnownLocation="crawler.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8c787ed5-c7aa-4351-8554-bdaeac0f0200"
+            name="specifications"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="fcd6e338-d628-402a-90ee-fc7e95f8b7f6"
+                LastKnownName="HashMap&lt;defenition, RoomSpecification&gt;"
+                LastKnownLocation="crawler.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="4f8ce246-fa8a-48f9-b224-d6e1555c3414"
+            name="getVisited"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cf744977-55a5-4a45-8893-b54dcec894db"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="crawler.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -618,10 +1068,142 @@
     <packageHasNamedElement>
       <class
         Id="6e978463-4a2c-4509-bd57-abdf781346d8"
-        name="Class1"
+        name="Enemy"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="98f82d37-6c42-4bb7-aead-3f2ead9fb0a6"
+            isDerived="false"
+            sourceEndRoleName="Enemy"
+            targetEndRoleName="EnemyState"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="3484eaac-0b35-4bde-b536-aba80a338d30"
+              LastKnownName="EnemyState"
+              LastKnownLocation="crawler.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="23816ff9-4898-445b-a1d4-ca31030aecd3"
+                  name="Enemy"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ac3e2707-ac0f-4c73-8e7b-9d286f8f68cd"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7cce633d-c228-456c-aac2-ef622fcbcbc4"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f60b88d0-b4cc-4f1a-bdb4-531627b338de"
+                  name="EnemyState"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="a90b9b2e-b381-4a0c-9ffa-97b144a6daf9"
+            name="level"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="crawler.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6af31c12-a56d-4abc-a0db-47227255dd2d"
+            name="health"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="crawler.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="da74b2cd-9461-4512-9cae-11a827c2b5b2"
+            name="strength"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="crawler.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ce5a32b6-569e-419e-958a-4ac08cc5185c"
+            name="status"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="3484eaac-0b35-4bde-b536-aba80a338d30"
+                LastKnownName="EnemyState"
+                LastKnownLocation="crawler.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -705,6 +1287,404 @@
       <undefinedType
         Id="87872724-8a8b-4696-88da-cd34f70e669d"
         name="Iteger" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="3484eaac-0b35-4bde-b536-aba80a338d30"
+        name="EnemyState"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="dde12bfe-cb2e-4dbc-846e-ab0648a3876f"
+            name="idle" />
+          <enumerationLiteral
+            Id="8b0cb738-502f-4b49-bc45-da6a6bd158fc"
+            name="fighting" />
+          <enumerationLiteral
+            Id="5bdbf711-7c8d-4c71-8435-b5d99a6f316c"
+            name="folowing" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c01fd5d7-b393-40f8-bf4f-ffe766a0c7dc"
+        name="Item"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="20ec07ec-f0b5-46d5-8981-4a15cd354735"
+            isDerived="false"
+            sourceEndRoleName="Item"
+            targetEndRoleName="ItemEffects"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="861a0a17-7952-4723-ad9f-1042c7e57e4d"
+              LastKnownName="ItemEffects"
+              LastKnownLocation="crawler.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e81459e6-ddda-4549-a875-59497ec3d8e1"
+                  name="Item"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="669d3811-8c56-4b38-a63d-18d694d3bb13"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="dcc33c8d-f221-49ab-bb0f-95042bcb7e2f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fdae85b3-68a3-40c5-9ca6-2749dd95bbec"
+                  name="ItemEffects"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="97abd1fa-fc63-4a43-bf8e-908cdc9a4df2"
+                      name="Lower"
+                      value="5" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="337ca89c-f154-4ce8-8527-c3ec69131679"
+                      name="Upper"
+                      value="5" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="f3eb4643-ef1a-4261-94c1-f2280ccf7e9a"
+            name="name"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="crawler.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a130a0ab-065f-475a-acad-d91bca8649bf"
+            name="duration"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="crawler.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e7cdcf82-ad8b-49c8-bfcc-c2f7c0231ff1"
+            name="effects"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ef5991d8-533d-4ff9-937b-383474f7dde8"
+                LastKnownName="HashMap"
+                LastKnownLocation="crawler.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="35040ff2-c561-44a1-bd48-bece0513674b"
+        name="Item" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="861a0a17-7952-4723-ad9f-1042c7e57e4d"
+        name="ItemEffects"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="d8176c40-5025-4d0e-b444-0452e4d91a7d"
+            name="armour" />
+          <enumerationLiteral
+            Id="905e92bf-feba-4860-a565-9c930a9c9d53"
+            name="focus" />
+          <enumerationLiteral
+            Id="d5e87b83-6660-4d88-8ebd-29b932526352"
+            name="health" />
+          <enumerationLiteral
+            Id="63f5b746-1569-437e-ae53-49947dd147e3"
+            name="xp" />
+          <enumerationLiteral
+            Id="995f3a21-d11b-432c-a9b0-b7a09be353d7"
+            name="strength" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="ef5991d8-533d-4ff9-937b-383474f7dde8"
+        name="HashMap" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="0bdebf01-3c20-4f3e-bbf8-4c53a8ce073c"
+        name="LinkedList" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a4a1ba4f-8b33-4669-8ed0-c31fe7cf8849"
+        name="MapRoom" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="efe5168e-bad2-4b3c-93f1-12322c6d8923"
+        name="MapRoom"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="17f022c5-c2fd-4ed5-8555-4587278373e5"
+            isDerived="false"
+            sourceEndRoleName="MapRoom"
+            targetEndRoleName="Room"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7b577ef1-9493-46eb-afe0-aada76093928"
+              LastKnownName="Room"
+              LastKnownLocation="crawler.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b348d197-4d74-45b2-9bff-31becad4681c"
+                  name="MapRoom"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3b792fb7-42b3-41c8-8159-961b9194c163"
+                  name="Room"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="03bbd7ec-1be0-45bb-9910-6b8c0bb84428"
+            name="x"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="crawler.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="82334e61-a9b0-4892-9be6-0a335c87a9b8"
+            name="y"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="crawler.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b3d3ae9a-43bb-4fd5-89b0-870ae77a7b38"
+            name="room"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="7b577ef1-9493-46eb-afe0-aada76093928"
+                LastKnownName="Room"
+                LastKnownLocation="crawler.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="4f7d077d-2a61-4630-831b-2f141007bd49"
+            name="getIcon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="204dd371-89a6-47e0-aba8-c00edc60ee65"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="crawler.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="53875fdf-dff1-416e-baf5-5226c89a7ddf"
+        name="INTEGER" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c7633400-fb82-4b03-878b-2c8b3e7e2026"
+        name="RoomSpecification"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="327305cc-5d1d-4e9a-bd8f-b1bbcf5fca13"
+            name="name"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="crawler.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="3b152eb4-542c-4f1f-9870-b575670bf831"
+            name="getInformation"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1f3a2436-214f-41a9-a163-8b16c58078b9"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="crawler.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="fcd6e338-d628-402a-90ee-fc7e95f8b7f6"
+        name="HashMap&lt;defenition, RoomSpecification&gt;" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
