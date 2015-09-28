@@ -824,7 +824,20 @@
                   isDerivedUnion="false"
                   aggregation="Composite"
                   isComposite="false"
-                  isNavigableOwned="false" />
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="379e9709-c734-4d3e-97d0-b9ba251c48bb"
+                      name="Lower"
+                      value="4" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="cc1f9592-a88f-4897-9918-5255fc8d05d3"
+                      name="Upper"
+                      value="4" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd

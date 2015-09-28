@@ -359,6 +359,16 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="49d7df48-8dc4-4d49-9337-3cb7c0df1350" name="Room" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="858091aa-36de-49c1-82bf-9a209b0f1553" name="Lower" value="4">
+                      <elementDefinition Id="379e9709-c734-4d3e-97d0-b9ba251c48bb" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="be525073-03ac-408d-b576-1c185741f361" name="Upper" value="4">
+                      <elementDefinition Id="cc1f9592-a88f-4897-9918-5255fc8d05d3" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="05916308-8e2c-48dc-83c3-2eb9c9ded019" />
                 </memberEnd>
               </associationHasOwnedEnds>
