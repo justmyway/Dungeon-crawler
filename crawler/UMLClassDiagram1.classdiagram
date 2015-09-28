@@ -354,11 +354,11 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="61b79251-ee2c-44a0-9d5b-d33ffe06608e" />
           </association>
-          <association Id="875074ae-42d3-42d5-9ec0-c5f6aadb42ac" isDerived="false" sourceEndRoleName="Rooms" targetEndRoleName="RoomSpecification" isLeaf="false" isAbstract="false">
+          <association Id="875074ae-42d3-42d5-9ec0-c5f6aadb42ac" isDerived="false" sourceEndRoleName="Room" targetEndRoleName="RoomSpecification" isLeaf="false" isAbstract="false">
             <classMoniker Id="6643e8a9-d282-475e-bc69-0f7c78a04008" LastKnownName="RoomSpecification" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="49d7df48-8dc4-4d49-9337-3cb7c0df1350" name="Rooms" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="49d7df48-8dc4-4d49-9337-3cb7c0df1350" name="Room" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
                   <lowerValueInternal>
                     <literalString Id="858091aa-36de-49c1-82bf-9a209b0f1553" name="Lower" value="4">
                       <elementDefinition Id="379e9709-c734-4d3e-97d0-b9ba251c48bb" />

@@ -804,7 +804,7 @@
           <association
             Id="366cefca-f122-4fc9-b11d-2f5c71c14364"
             isDerived="false"
-            sourceEndRoleName="Rooms"
+            sourceEndRoleName="Room"
             targetEndRoleName="RoomSpecification"
             isLeaf="false"
             isAbstract="false">
@@ -816,7 +816,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="05916308-8e2c-48dc-83c3-2eb9c9ded019"
-                  name="Rooms"
+                  name="Room"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
