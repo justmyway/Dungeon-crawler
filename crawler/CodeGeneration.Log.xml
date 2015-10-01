@@ -6,6 +6,69 @@
   <MessageClass Name="Error" Label="Error" Option="Show errors" />
   <MessageClass Name="Property" Label="Property" Option="Show metadata" />
   <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+<<<<<<< HEAD
+  <Message Timestamp="2015-09-29T12:53:17" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="ProjectPath = ..\crawlerLib\crawlerLib.csproj" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Medium" Text="crawler's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'crawler::Player' -  (Class), 'crawler::Weapon' -  (Class), 'crawler::Map' -  (Class), 'crawler::Room' -  (Class), 'crawler::Corridor' -  (Class), 'crawler::Enemy' -  (Class), 'crawler::Armour' -  (Class), 'crawler::Item' -  (Class), 'crawler::MapRoom' -  (Class), 'crawler::RoomSpecification' -  (Class) " />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::Player' -  (Class): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::Weapon' -  (Class): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::Map' -  (Class): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::Room' -  (Class): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::Corridor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::Enemy' -  (Class): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::Armour' -  (Class): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::Item' -  (Class): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::MapRoom' -  (Class): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::RoomSpecification' -  (Class): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="Name = EnumTemplate" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="ProjectPath = ..\crawlerLib\crawlerLib.csproj" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Medium" Text="crawler's Text Template Binding: 'EnumTemplate' will apply EnumTemplate.t4 to: 'crawler::EnemyState' -  (Enumeration), 'crawler::ItemEffects' -  (Enumeration) " />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::EnemyState' -  (Enumeration): no file generated because the 'AppliesToElement' method of the template 'EnumTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::ItemEffects' -  (Enumeration): no file generated because the 'AppliesToElement' method of the template 'EnumTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="ProjectPath = ..\crawlerLib\crawlerLib.csproj" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Medium" Text="crawler's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'crawler::Player' -  (Class), 'crawler::Weapon' -  (Class), 'crawler::Map' -  (Class), 'crawler::Room' -  (Class), 'crawler::Corridor' -  (Class), 'crawler::Enemy' -  (Class), 'crawler::Armour' -  (Class), 'crawler::Item' -  (Class), 'crawler::MapRoom' -  (Class), 'crawler::RoomSpecification' -  (Class) " />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::Player' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::Weapon' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::Map' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::Room' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::Corridor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::Enemy' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::Armour' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::Item' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::MapRoom' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::RoomSpecification' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="The selection included 12 elements which were not bound to a template." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::' -  (Association): no bound template." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::' -  (Association): no bound template." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::' -  (Association): no bound template." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::' -  (Association): no bound template." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::' -  (Association): no bound template." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::' -  (Association): no bound template." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::' -  (Association): no bound template." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::' -  (Association): no bound template." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::' -  (Association): no bound template." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::' -  (Association): no bound template." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::' -  (Association): no bound template." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="Diagnostic" Text="'crawler::' -  (Association): no bound template." />
+  <Message Timestamp="2015-09-29T12:53:17" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+=======
   <Message Timestamp="2015-09-29T12:50:34" Importance="High" Text="Code generation or text transformation started." />
   <Message Timestamp="2015-09-29T12:50:34" Importance="Diagnostic" Text="Name = ClassTemplate" />
   <Message Timestamp="2015-09-29T12:50:34" Importance="Diagnostic" Text="Overwrite = True" />
@@ -26,4 +89,5 @@
   <Message Timestamp="2015-09-29T12:50:34" Importance="Medium" Text="crawler's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'crawler::Weapon' -  (Class) " />
   <Message Timestamp="2015-09-29T12:50:34" Importance="Diagnostic" Text="'crawler::Weapon' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
   <Message Timestamp="2015-09-29T12:50:34" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+>>>>>>> 5b01fc0f1f247a2cf96296582f70d91eb18ddcf7
 </Log>
