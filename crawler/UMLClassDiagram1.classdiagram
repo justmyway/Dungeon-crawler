@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="d1b2d923-f62a-423f-bf96-0cf6c4f22afc" name="UMLClassDiagram1" linkedPackageId="942a3ff7-c73c-49a2-a1d1-e659d0ec3d60" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <appliedStereotypesInternal>
-<<<<<<< HEAD
     <stereotypeInstance Id="9d678197-04f5-4313-8bf6-f46f63b2955a" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="af63860b-bcdd-4179-a27f-d87963b7f9d4" />
       <propertyInstances>
@@ -69,7 +68,9 @@
             <elementDefinition Id="560076bd-e81c-4e08-b4dd-a75aee5f0cd4" />
           </propertyInstance>
           <elementDefinition Id="4ec7e836-71c2-4583-80e0-6e3178663981" />
-=======
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
     <stereotypeInstance Id="f5b6aa33-8f51-4de2-bec0-b4868b1b0bdf" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="e4aad05b-0ee0-4c27-88ac-19a9307b745d" />
       <propertyInstances>
@@ -137,13 +138,11 @@
             <elementDefinition Id="41883372-4d3b-455d-8b71-41a4859f43eb" />
           </propertyInstance>
           <elementDefinition Id="44529cbd-fbd7-406c-94fe-2ecb49bdd672" />
->>>>>>> 5b01fc0f1f247a2cf96296582f70d91eb18ddcf7
         </stereotypeInstanceHasPropertyInstances>
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
   <profileInstances>
-<<<<<<< HEAD
     <packageHasProfileInstances Id="6a57f2e3-042f-4216-91e9-5a6f93710996">
       <profileInstance Id="899ea08c-2f64-45b2-a60b-7e0ad95d931f" name="CSharpProfile">
         <elementDefinition Id="c13464ef-8560-447a-829d-847e980d0964" />
@@ -155,7 +154,7 @@
         <elementDefinition Id="896a490c-4731-4833-a7dd-7198f12d4f77" />
       </profileInstance>
       <elementDefinition Id="2f51044c-ef42-4fc5-b5e7-a8b6c9763ab4" />
-=======
+    </packageHasProfileInstances>
     <packageHasProfileInstances Id="de52754e-b066-4ff2-939c-a5edb29e9bd6">
       <profileInstance Id="a32dfc6f-1de1-4397-9b10-1c3819a683a8" name="CSharpProfile">
         <elementDefinition Id="de30c9ea-2ded-4a94-9615-fc36d6d76e9c" />
@@ -167,7 +166,6 @@
         <elementDefinition Id="a8551edd-0d34-4f32-a051-29cf165a8730" />
       </profileInstance>
       <elementDefinition Id="ef180f98-375a-4c9e-9181-cc614966b984" />
->>>>>>> 5b01fc0f1f247a2cf96296582f70d91eb18ddcf7
     </packageHasProfileInstances>
   </profileInstances>
   <packagedElements>
